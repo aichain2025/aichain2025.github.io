@@ -1,40 +1,128 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AIChain 官网</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn-download {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e60000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: 20px;
+    }
+  </style>
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif; background: url('background.png') no-repeat center center fixed; background-size: cover;">
-  <!-- 顶部导航栏 -->
-  <nav style="background-color: #111; color: white; padding: 16px; text-align: center;">
-    <a href="#" style="color: white; margin: 0 20px; text-decoration: none;">首页</a>
-    <a href="#faq" style="color: white; margin: 0 20px; text-decoration: none;">常见问题</a>
-    <a href="AIChain_Whitepaper_v1.0.pdf" download style="color: white; margin: 0 20px; text-decoration: none;">下载白皮书</a>
+<body>
+
+<header>
+  <img src="logo.png" alt="AIChain Logo">
+  <nav>
+    <a href="#intro">项目简介</a>
+    <a href="#whitepaper">白皮书</a>
+    <a href="#roadmap">路线图</a>
+    <a href="#faq">常见问题</a>
+    <a href="#contact">联系我们</a>
   </nav>
+</header>
 
-  <!-- 欢迎区块 -->
-  <section style="text-align: center; padding: 60px 20px;">
-    <img src="logo.png" alt="AIChain Logo" width="160" />    <h1>欢迎来到 AIChain</h1>
-    <p>中国首个全民参与 AI 训练的数字货币平台。</p>
-  </section>
+<section class="section" id="intro">
+  <h2>项目简介</h2>
+  <p style="text-align:center; max-width: 800px; margin: 0 auto;">
+    AIChain 是一个基于全民参与训练 AI 模型的去中心化项目，每个人都可以通过完成简单任务，为 AI 训练贡献数据与智慧，从而获得专属积分 AIC。
+  </p>
+</section>
 
-  <!-- FAQ 常见问题 -->
-  <section id="faq" style="max-width: 800px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px;">
-    <h2 style="text-align: center;">常见问题</h2>
-    <div>
-      <h3>什么是 AIChain？</h3>
-      <p>AIChain 是一个结合人工智能和区块链的去中心化平台，人人都可以参与模型训练并获得积分奖励。</p>
-    </div>
-    <div>
-      <h3>如何参与？</h3>
-      <p>你只需通过网页或应用，完成训练、标注、问答等任务，就能获得平台积分 AIC。</p>
-    </div>
-    <div>
-      <h3>AIC 是什么？</h3>
-      <p>AIC 是平台的积分代币，可以用于兑换资源、参与社区治理，未来也可在链上交易。</p>
-    </div>
-  </section>
+<section class="section" id="whitepaper">
+  <h2>下载白皮书</h2>
+  <p style="text-align:center;">
+    点击下方按钮下载 AIChain 白皮书，了解我们的技术原理与经济体系。
+  </p>
+  <p style="text-align:center;">
+    <a href="AIChain_Whitepaper_v1.pdf" class="btn-download" download>📄 下载白皮书</a>
+  </p>
+</section>
+
+<section class="section" id="roadmap">
+  <h2>项目路线图</h2>
+  <ul style="max-width: 800px; margin: 0 auto;">
+    <li>✅ 阶段一：项目立项与白皮书编写</li>
+    <li>✅ 阶段二：官网搭建与功能验证</li>
+    <li>🔄 阶段三：开放全民训练 AI 功能 Demo</li>
+    <li>🕒 阶段四：上线积分系统 AIC 并发布智能合约</li>
+    <li>📢 阶段五：全球推广、社区建设、政府合作</li>
+  </ul>
+</section>
+
+<section class="section" id="faq">
+  <h2>常见问题</h2>
+  <ul style="max-width: 800px; margin: 0 auto;">
+    <li><strong>问：</strong>AIChain 是什么？<br/>AIChain 是一个全民参与 AI 训练并获得奖励的项目。</li>
+    <li><strong>问：</strong>如何获得 AIC？<br/>通过训练数据、回答问题或其他交互行为即可获得 AIC。</li>
+    <li><strong>问：</strong>AIC 有什么用？<br/>未来可用于兑换服务、参与决策、甚至上交易所。</li>
+  </ul>
+</section>
+
+<section class="section" id="contact">
+  <h2>联系我们</h2>
+  <p style="text-align:center;">
+    有任何建议或合作意向，请联系邮箱：<br/>
+    <a href="mailto:aichain2025@gmail.com" style="color:#fff;">aichain2025@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  © 2025 AIChain. All rights reserved.
+</footer>
 
 </body>
 </html>
