@@ -1,99 +1,117 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AIChain 官网</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIChain - 全民训练AI · 挖掘未来价值</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Microsoft YaHei", sans-serif;
+      color: #fff;
       background: url('background.png') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
     }
+
     nav {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav img {
-      height: 40px;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
       background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 10px;
-      text-align: left;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-around;
     }
-    h1, h2 {
-      color: #ff5555;
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
     }
-    .faq {
-      margin-top: 40px;
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
     }
+
+    .logo {
+      display: block;
+      margin: 40px auto 20px;
+      width: 150px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px;
+      border-radius: 12px;
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff3333;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.7);
       margin-top: 40px;
     }
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 20px;
-      background-color: #ff5555;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
+
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
+
   <nav>
-    <div><img src="logo.png" alt="AIChain Logo" /></div>
-    <div>
-      <a href="#home">首页</a>
-      <a href="#faq">常见问题</a>
-    </div>
+    <a href="#home">首页</a>
+    <a href="#faq">常见问题</a>
+    <a href="#contact">联系我们</a>
   </nav>
 
+  <img src="logo.png" alt="AIChain Logo" class="logo">
+
   <div class="container" id="home">
-    <h1>AIChain：全民参与的 AI 挖矿网络</h1>
-    <p>AIChain 是一个全新的 Web3 项目，旨在通过“全民智慧”训练 AI 模型，每个人都可以通过回答问题、提交数据等方式参与 AI 训练，并获得相应的积分（AIC）奖励。</p>
-    <p>我们要做的是中国人自己的 AI + 数字货币创新体系，用 AIC 奖励每一个愿意为未来 AI 世界贡献智慧的人。</p>
-    <a class="button" href="aichain_whitepaper_v1.0.pdf" target="_blank">📄 下载白皮书</a>
+    <h1>AIChain：人人可参与的 AI 挖矿数字货币</h1>
+    <p>AIChain 是一个颠覆传统的项目：通过全民训练 AI 模型，参与者将获得 AIC 积分，未来可成为一种通用数字货币。</p>
+    <a class="btn-download" href="AIChain_whitepaper_V1.0.pdf" download>📄 下载白皮书</a>
   </div>
 
-  <div class="container">
-    <h2>路线图 Roadmap</h2>
+  <div class="container" id="faq">
+    <h2>常见问题</h2>
     <ul>
-      <li>✅ 完成第一版白皮书撰写</li>
-      <li>✅ 上线官网和初步介绍页面</li>
-      <li>🛠 开发 AI 训练任务系统（进行中）</li>
-      <li>🚀 上线 AIC 分发与查询系统</li>
-      <li>🌐 链接钱包系统，发布 AIC 上链</li>
+      <li><strong>Q: 这个项目和比特币有什么不同？</strong><br>A: AIChain 不是靠算力挖矿，而是靠用户训练 AI，真正做到全民参与，人人有价值。</li>
+      <li><strong>Q: 我不懂编程也可以参与吗？</strong><br>A: 完全可以！我们设计了简单的交互方式，任何人只要有手机或电脑即可参与训练。</li>
+      <li><strong>Q: AIC 积分能干什么？</strong><br>A: AIC 是奖励凭证，未来可以兑换资源、交易服务，甚至在链上流通。</li>
     </ul>
   </div>
 
-  <div class="container faq" id="faq">
-    <h2>常见问题 FAQ</h2>
-    <p><strong>Q：AIChain 是区块链项目吗？</strong><br/>A：是的，我们结合 Web3 技术和 AI 训练，打造去中心化贡献-奖励体系。</p>
-    <p><strong>Q：每个人都可以参与吗？</strong><br/>A：当然，AIChain 的核心理念就是“全民可参与”。</p>
-    <p><strong>Q：怎么获得 AIC？</strong><br/>A：完成 AI 训练任务，上传数据或标注问题，系统将分发 AIC 积分。</p>
+  <div class="container" id="contact">
+    <h2>联系我们</h2>
+    <p>想成为贡献者或合作伙伴？欢迎联系我们：</p>
+    <ul>
+      <li>📧 邮箱：<a href="mailto:1357907000@qq.com" style="color: #fff;">1357907000@qq.com</a></li>
+      <li>🌐 官方网站：<a href="https://aichain2025.github.io" style="color:#fff;">aichain2025.github.io</a></li>
+      <li>📢 社群将于未来开放，敬请期待</li>
+    </ul>
   </div>
 
   <footer>
-    © 2025 AIChain 项目团队 | 引领中国 AI + Web3 的未来
+    &copy; 2025 AIChain 项目组｜致力于构建中国人自己的 Web3 与 AI 未来
   </footer>
+
 </body>
 </html>
