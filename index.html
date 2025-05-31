@@ -191,5 +191,18 @@
     <p>© 2025 AIChain. All rights reserved.</p>
     <p>未经授权，禁止复制、传播或用于商业用途。</p>
   </footer>
+  <script>
+  document.getElementById('demo-button').addEventListener('click', function () {
+    const userInput = document.getElementById('user-input').value.trim();
+    const responseBox = document.getElementById('demo-response');
+
+    if (userInput === '') {
+      responseBox.innerHTML = '<p>❗请输入一个问题</p>';
+    } else {
+      // 模拟 AI 响应（后续可接入真实模型）
+      responseBox.innerHTML = `<p><strong>AIChain：</strong>您问的是“${userInput}”，这是一个非常有价值的问题，我们的模型正在学习更好地理解与回答人类问题。</p>`;
+    }
+  });
+</script>
 </body>
 </html>
