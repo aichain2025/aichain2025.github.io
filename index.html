@@ -1,117 +1,170 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AIChain - 全民训练AI · 挖掘未来价值</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIChain - 全民训练AI，智慧挖矿新时代</title>
   <style>
     body {
       margin: 0;
-      font-family: "Microsoft YaHei", sans-serif;
-      color: #fff;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
     }
-
-    nav {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px 20px;
+    header {
+      background-color: #1a1a1a;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #e53935;
+    }
     nav a {
-      color: white;
+      color: #f0f0f0;
+      margin-left: 1.5rem;
       text-decoration: none;
-      padding: 8px 16px;
     }
-
     nav a:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 5px;
+      color: #e53935;
     }
-
-    .logo {
-      display: block;
-      margin: 40px auto 20px;
-      width: 150px;
-    }
-
-    .container {
+    .hero {
+      background: url('background.png') center/cover no-repeat;
+      padding: 100px 20px;
       text-align: center;
-      padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 20px;
-      border-radius: 12px;
     }
-
-    .btn-download {
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      text-align: center;
+    }
+    .feature-box {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 8px;
+      flex: 1 1 200px;
+    }
+    .feature-box h3 {
+      color: #e53935;
+    }
+    .timeline {
+      border-left: 2px solid #e53935;
+      padding-left: 1rem;
+    }
+    .timeline p {
+      margin: 1rem 0;
+    }
+    .cta-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #ff3333;
-      color: white;
+      background: #e53935;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 4px;
+      margin-top: 2rem;
     }
-
     footer {
+      background: #1a1a1a;
       text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      margin-top: 40px;
-    }
-
-    ul {
-      text-align: left;
-      max-width: 600px;
-      margin: 0 auto;
-      padding-left: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>AIChain</h1>
+    <nav>
+      <a href="#">首页</a>
+      <a href="#roadmap">路线图</a>
+      <a href="AIChain_whitepaper_V1.0.pdf" target="_blank">白皮书</a>
+      <a href="#faq">常见问题</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="#home">首页</a>
-    <a href="#faq">常见问题</a>
-    <a href="#contact">联系我们</a>
-  </nav>
-
-  <img src="logo.png" alt="AIChain Logo" class="logo">
-
-  <div class="container" id="home">
-    <h1>AIChain：人人可参与的 AI 挖矿数字货币</h1>
-    <p>AIChain 是一个颠覆传统的项目：通过全民训练 AI 模型，参与者将获得 AIC 积分，未来可成为一种通用数字货币。</p>
-    <a class="btn-download" href="AIChain_whitepaper_V1.0.pdf" download>📄 下载白皮书</a>
+  <div class="hero">
+    <h2>全民训练AI，智慧挖矿新时代</h2>
   </div>
 
-  <div class="container" id="faq">
-    <h2>常见问题</h2>
-    <ul>
-      <li><strong>Q: 这个项目和比特币有什么不同？</strong><br>A: AIChain 不是靠算力挖矿，而是靠用户训练 AI，真正做到全民参与，人人有价值。</li>
-      <li><strong>Q: 我不懂编程也可以参与吗？</strong><br>A: 完全可以！我们设计了简单的交互方式，任何人只要有手机或电脑即可参与训练。</li>
-      <li><strong>Q: AIC 积分能干什么？</strong><br>A: AIC 是奖励凭证，未来可以兑换资源、交易服务，甚至在链上流通。</li>
-    </ul>
-  </div>
+  <section>
+    <h2>什么是 AIChain？</h2>
+    <p>AIChain 是一个融合 AI 训练与数字积分的新型网络。我们不是模仿比特币，而是要超越它：人人都能参与 AI 训练，每一次互动都会获得 AIC 积分，实现全民智慧挖矿。</p>
+  </section>
 
-  <div class="container" id="contact">
+  <section>
+    <h2>项目亮点</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>🧠 全员训练 AI</h3>
+        <p>人人皆可参与 AI 模型训练与反馈，贡献即收益。</p>
+      </div>
+      <div class="feature-box">
+        <h3>💎 积分锚定价值</h3>
+        <p>AIC 积分映射用户贡献，实现公开透明的价值体系。</p>
+      </div>
+      <div class="feature-box">
+        <h3>🌐 去中心化治理</h3>
+        <p>所有规则开源透明，由社区共治共建。</p>
+      </div>
+      <div class="feature-box">
+        <h3>🚀 AI 上链落地</h3>
+        <p>链上发布模型与任务，实现真实价值场景应用。</p>
+      </div>
+      <div class="feature-box">
+        <h3>📈 持续演化系统</h3>
+        <p>AIChain 随数据自我进化，是可成长的智能生态。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>发展路线图</h2>
+    <div class="timeline">
+      <p><strong>阶段 1：</strong> 核心构想发布、社区种子建设</p>
+      <p><strong>阶段 2：</strong> 上线测试版任务系统与积分机制</p>
+      <p><strong>阶段 3：</strong> 建立模型训练平台与 AI 积分生态</p>
+      <p><strong>阶段 4：</strong> 推出链上部署、开源与多链兼容</p>
+      <p><strong>阶段 5：</strong> 与传统 AI 巨头合作，共建智慧网络</p>
+    </div>
+  </section>
+
+  <section>
+    <a class="cta-button" href="AIChain_whitepaper_V1.0.pdf" target="_blank">📄 下载白皮书</a>
+  </section>
+
+  <section id="contact">
     <h2>联系我们</h2>
-    <p>想成为贡献者或合作伙伴？欢迎联系我们：</p>
-    <ul>
-      <li>📧 邮箱：<a href="mailto:1357907000@qq.com" style="color: #fff;">1357907000@qq.com</a></li>
-      <li>🌐 官方网站：<a href="https://aichain2025.github.io" style="color:#fff;">aichain2025.github.io</a></li>
-      <li>📢 社群将于未来开放，敬请期待</li>
-    </ul>
-  </div>
+    <p>📧 邮箱：1357907000@qq.com</p>
+  </section>
+
+  <section id="faq">
+    <h2>常见问题</h2>
+    <p>更多内容请下载白皮书查阅。</p>
+  </section>
 
   <footer>
-    &copy; 2025 AIChain 项目组｜致力于构建中国人自己的 Web3 与 AI 未来
+    <p>© 2025 AIChain. All rights reserved.</p>
+    <p>未经授权，禁止复制、传播或用于商业用途。</p>
   </footer>
-
 </body>
 </html>
