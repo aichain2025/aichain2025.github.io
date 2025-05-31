@@ -162,7 +162,31 @@
     <h2>常见问题</h2>
     <p>更多内容请下载白皮书查阅。</p>
   </section>
+  
+  <section id="demo">
+    <h2>体验 Demo</h2>
+    <p>以下是 AIChain 模拟交互演示。用户可提交一句话任务，获得模型反馈。</p>
+    <form onsubmit="handleDemo(event)">
+      <input type="text" id="userInput" placeholder="请输入您的问题，例如：如何训练AI？" style="width:70%;padding:0.5rem;" />
+      <button type="submit" style="padding:0.5rem 1rem;margin-left:0.5rem;">提交</button>
+    </form>
+    <div id="demoResult" style="margin-top:1rem;color:#e53935;"></div>
+  </section>
 
+  <script>
+    function handleDemo(event) {
+      event.preventDefault();
+      const input = document.getElementById("userInput").value.trim();
+      const output = document.getElementById("demoResult");
+      if (!input) {
+        output.textContent = "请输入问题内容。";
+        return;
+      }
+      // 模拟响应
+      output.textContent = "【AI 模拟回复】感谢您的任务提交，系统将分析并给予奖励积分反馈。";
+    }
+  </script>
+  
   <footer>
     <p>© 2025 AIChain. All rights reserved.</p>
     <p>未经授权，禁止复制、传播或用于商业用途。</p>
